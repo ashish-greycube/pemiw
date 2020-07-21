@@ -79,13 +79,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Payment Entry": {
+		"validate": "pemiw.api.get_amount_in_words",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
